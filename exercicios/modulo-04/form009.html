@@ -10,11 +10,11 @@
 
 <body>
     <h1>Exemplo de Formulário</h1>
-    <form action="cadastro.php" method="get">
+    <form action="cadastro.php" method="post">
 
         <p>
 
-            <label for="iest">Estado</label>
+            <label for="iest">Estado:</label>
             <select name="estado" id="iest">
 
                 <option value="" selected>---Escolha---</option>
@@ -32,18 +32,25 @@
             </select>
         </p>
         <p>
-            <label for="iprof">Profissão</label>
+            <label for="iprof">Profissão:</label>
             <input type="text" name="prof" id="iprof" list="ltsprof">
-            <datalist id="ltsprof">
 
+            <datalist id="ltsprof">
                 <option>Administrador</option>
                 <option>Desenvolvedor</option>
                 <option>Contador</option>
                 <option>Professora</option>
-
             </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem:</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+
 
         </p>
+
+
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Excluir">
